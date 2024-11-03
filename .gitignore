@@ -1,0 +1,15 @@
+# Ignorowanie środowiska wirtualnego
+venv/
+
+# Ignorowanie plików tymczasowych edytorów
+*.swp
+*.swo
+.vscode/
+
+# Ignorowanie plików systemowych
+.DS_Store
+Thumbs.db
+
+# Ignorowanie plików konfiguracyjnych
+.env
+__pycache__/
