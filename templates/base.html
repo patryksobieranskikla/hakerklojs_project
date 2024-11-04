@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakerklojs Visionary Marketing</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+     <!-- Inne znaczniki head -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+    <!-- Nagłówek strony -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/">Hakerklojs</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#oferta">Oferta</a></li>
+                <li><a href="#uslugi">Usługi</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>    
+
+    <!-- Główna zawartość strony -->
+    <main>
+        <!-- Placeholder dla sekcji oferta -->
+        <section id="oferta">
+            <h2>Nasza Oferta</h2>
+            <p>W tej sekcji znajdzie się opis oferowanych produktów i usług.</p>
+        </section>
+
+        <!-- Placeholder dla sekcji usługi -->
+        <section id="uslugi">
+            <h2>Usługi</h2>
+            <p>Opis dostępnych usług i ich korzyści dla klientów.</p>
+        </section>
+
+        <!-- Placeholder dla sekcji kontakt -->
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+            <p>Informacje kontaktowe oraz formularz kontaktowy.</p>
+        </section>
+    </main>
+
+    <!-- Stopka strony -->
+    <footer>
+        <p>&copy; 2024 Hakerklojs Visionary Marketing. Wszystkie prawa zastrzeżone.</p>
+        <p>Znajdź nas na:</p>
+        <ul class="social-links">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">LinkedIn</a></li>
+        </ul>
+    </footer>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const hamburger = document.querySelector(".hamburger");
+            const navLinks = document.querySelector(".nav-links");
+    
+            hamburger.addEventListener("click", () => {
+                navLinks.classList.toggle("active");
+            });
+        });
+    </script>    
+</body>
+</html>
