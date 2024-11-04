@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
+    <!-- Dodaj ten kod przed innymi linkami do stylów -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hakerklojs Visionary Marketing</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-     <!-- Inne znaczniki head -->
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Inne znaczniki head -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
 
@@ -35,7 +38,8 @@
         <section id="oferta">
             <h2>Nasza Oferta</h2>
             <p>W tej sekcji znajdzie się opis oferowanych produktów i usług.</p>
-        </section>
+            <a href="#kontakt" class="cta-button">Skontaktuj się z nami</a>
+        </section>        
 
         <!-- Placeholder dla sekcji usługi -->
         <section id="uslugi">
@@ -69,6 +73,24 @@
             hamburger.addEventListener("click", () => {
                 navLinks.classList.toggle("active");
             });
+        });
+    </script>    
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const sections = document.querySelectorAll("section");
+    
+            const revealSection = () => {
+                sections.forEach(section => {
+                    const sectionTop = section.getBoundingClientRect().top;
+                    if (sectionTop < window.innerHeight - 100) {
+                        section.classList.add("section-visible");
+                    }
+                });
+            };
+    
+            window.addEventListener("scroll", revealSection);
+            revealSection();
         });
     </script>    
 </body>
