@@ -1,0 +1,235 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+}
+
+a {
+  color: #ffa500;
+  text-decoration: none;
+}
+a:hover {
+  color: #e69500;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #ffa500;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-align: center;
+}
+.cta-button:hover {
+  background-color: #e69500;
+  transform: translateY(-2px);
+}
+
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.section-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+header nav .logo a {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+header nav .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+header nav .nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+header nav .nav-links li a:hover {
+  color: #ffa500;
+}
+header nav .hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+header nav .hamburger span {
+  height: 2px;
+  width: 25px;
+  background: #fff;
+  margin: 4px;
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+main section {
+  margin-bottom: 2rem;
+}
+main section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+main section p {
+  font-size: 1rem;
+  color: #666;
+}
+main section img {
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+footer p {
+  margin-bottom: 0.5rem;
+}
+footer .social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+footer .social-links li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+footer .social-links li a:hover {
+  color: #ffa500;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #ffa500;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.cta-button:hover {
+  background-color: #e69500;
+}
+
+@media (max-width: 768px) {
+  header nav .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  main {
+    padding: 0 1rem;
+  }
+  section h2 {
+    font-size: 1.5rem;
+  }
+  section p {
+    font-size: 0.9rem;
+  }
+  .cta-button {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 480px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav .nav-links {
+    gap: 0.5rem;
+  }
+  main {
+    padding: 0 1rem;
+  }
+  section h2 {
+    font-size: 1.2rem;
+  }
+  section p {
+    font-size: 0.8rem;
+  }
+  .cta-button {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+#oferta, #uslugi, #kontakt {
+  padding: 2rem 0;
+}
+
+#oferta {
+  background-color: #ffffff;
+}
+
+#uslugi {
+  background-color: #f9f9f9;
+}
+
+#kontakt {
+  background-color: #ffffff;
+}
+
+/*# sourceMappingURL=main_v2.css.map */
