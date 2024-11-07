@@ -1,4 +1,4 @@
-# Ignorowanie środowiska wirtualnego
+# Ignorowanie folderu wirtualnego środowiska
 venv/
 
 # Ignorowanie plików tymczasowych edytorów
